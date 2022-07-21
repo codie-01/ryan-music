@@ -5,12 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!----------------------- Google Fonts ---------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        
+        
+        
+        <!----------------------- Gridlex ---------------------------->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+
+          <!----------------------- Custom Stylesheet - always comes LAST, after Gridlex, Font etc. ---------------------------->      
     <link rel="stylesheet" type="text/css" href="/style.css" />
+
+    <!----------------------- Jekyll Page Title (with liquid-content-tag in curly brackets ) ---------------------------->
     <title>{{page.title}}</title>
+
+
 </head>
 
 <body>
+
+    <header class="grid-spaceBetween">
+
+        <div class="col-3_md-12-middle center-md padded-l">
+            <a href="https://www.ryaninglis.com/"> <img src="/images/logo-white.png"> </a>
+        </div>
+
+        <nav class="col-6_md-12-middle center-md right padded-r">
+            <a href="/index.html">Home</a>
+            <a href="/bio.html">About</a>
+            <a href="/music.html">Music</a>
+            <a href="/kontaktformular.html">Contact</a>
+        </nav>
+
+    </header>
+
+
     {{content}}
+
+
+    <!----------------------------------------- Footer ----------------------------------------------------------->
+<footer class="grid padded-footer">
+
+    <div class="col-3 hide-sm">
+        <img src="/images/logo-white.png">
+    </div>
+<!----------------------------------------------------------->
+<!--------------------------- Empty Filler------------------->
+    <div class="col-1 hide-sm">
+        <!--- empty filler---->
+    </div>
+<!----------------------------------------------------------->
+<!----------------------------------- Social Media ------------------>
+    <div class="col-3_sm-4_xs-12">
+        <h4>About</h4>
+        <nav>
+            <a href="#">Bio</a>
+            <a href="https://www.facebook.com/ryanaoinglismusic" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/ryanaoinglis/" target="_blank">Instagram</a>
+        </nav>
+    </div>
+    <!----------------------------------------------------->
+<!----------------------------------- Music ------------->
+    <div class="col-3_sm-4_xs-12">
+        <h4>Music</h4>
+        <nav>
+            <a href="https://music.apple.com/de/artist/ryan-inglis/311819366" target="_blank">Apple Music</a>
+            <a href="https://music.amazon.com/artists/B005CUE3CE/ryan-inglis?marketplaceId=A1PA6795UKMFR9&musicTerritory=DE&ref=dm_sh_BsBYzOLDwhHy6nQ94UjMkn9qk" target="_blank">Amazon Music</a>
+            <a href="https://open.spotify.com/artist/60H4LCpPxM53VeJQhOu42l?si=KAsCsT2wRLOysBbcILpQCg" target="_blank">Spotify</a>
+        </nav>
+    </div>
+    <!----------------------------------------------------->
+<!------------------------------- Contact & Imprint --------------------->
+    <div class="col-2_sm-4_xs-12">
+        <h4>Contact</h4>
+        <nav>
+            <a href="/kontaktformular.html">Contact Form</a>
+            <a href="/datenschutzerklaerung.html">Privacy Policy</a>
+            <a href="/impressum.html">Imprint</a>
+        </nav>
+    </div>
+</footer>
+
+        <div class="center copyright"> 
+            <p>Copyright | ©2022 | Ryan Inglis</p></div>
+
 </body>
 
 </html>
