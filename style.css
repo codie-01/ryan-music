@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(22, 19, 19);
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: white;
@@ -16,6 +16,12 @@ img {
 }
 
 
+/*--------------------- Temporary Styles ------------------
+
+div, p, h1, h2 {
+    border: 1px solid lightblue;
+}
+---------*/
 
 /*--------------------- Typography ---------------------------*/
 
@@ -86,28 +92,28 @@ header img {
 /*----------------------------------- Footer ----------------------------------*/   
 
 footer a {  
-margin: 0rem 0.5rem;    
+    margin: 0rem 0.5rem;    
 }
 
 footer a:hover { 
-border: none;      
+    border: none;      
 }
 
 header img {
-max-width: 100px;
+    max-width: 100px;
 }
 
 footer img {
-max-width: 120px;
-margin-left: 3rem;
+    max-width: 120px;
+    margin-left: 3rem;
 }
 
 footer p, h4 {
-margin: 0.5rem;
+    margin: 0.5rem;
 }
 
 footer nav a {
-display: block;
+    display: block;
 }
 
 
@@ -147,3 +153,120 @@ padding: 0rem 0rem 1.5rem 0rem; }
 .tall-60 { min-height: 60vh; }
 .tall-70 {min-height: 70vh; }
 .tall-90 { min-height: 90vh; }
+
+
+
+
+     /*----------------------- Kontaktformular -----------------------*/
+     form input, form textarea {
+        width: 100%;
+        margin: 0.5rem 0;
+        border: 2px solid grey;
+        padding: 0.5rem;
+        outline: none;
+        font-family: inherit;
+        font-size: 0.9rem;
+      }
+      
+      form input:focus, 
+      form textarea:focus {
+        border-color: orange;
+      }
+      
+      textarea {
+        min-height: 9rem;
+      }
+    
+      form label {
+        /*---- change label from default display inline-block to display: block to set custom margin ----*/
+        display: block;
+        margin-top: 1rem;
+          color: orange;
+          font-weight: bold;
+        }
+        
+        form button {
+          background-color: orange;
+          color: white;
+          border: 1px solid orange;
+          padding: 1rem 2rem;
+          margin: 1rem 0;
+          letter-spacing: 0.5rem 0;
+        }
+
+        button:hover {
+            color: orange;
+            background-color: white;
+            border: 1px solid orange;
+          }
+
+          .pointer { cursor: pointer; }
+    
+        form p {
+            font-size: 0.7rem;
+        }
+    
+        form p a {
+          text-decoration: underline;
+        }
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+ /*--------------------- Background Images ---------------------------*/
+
+ .bg-white {
+    background-color: white;
+    color: black;
+ }
+
+ .bg-rubikscube {
+    background-image: url('/images/rubikscube-1.png');
+    background-color: white;
+    background-size: cover;
+    background-position: 20% 10%;
+    background-repeat: no-repeat;
+}
+
+.bg-rubikscube-2 {
+    background-image: url('/images/rubikscube-2.jpg');
+    background-color: white;
+    background-size: cover;
+    background-position: 0% 20%;
+    background-repeat: no-repeat;
+}
+
+.bg-vtktm {
+    background-image: url('/images/vtktm-band.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: 0% 20%;
+    background-repeat: no-repeat;
+}
+
+.bg-rubikscube-featured {
+    background-image: url('/images/rubikscube-featured.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*--------------------- Buttonss ---------------------------*/
+
+.button {
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    letter-spacing: 0.5rem 0;
+    border-box: inline-block;
+  }
+
+  .button:hover {
+      color: orange;
+      background-color: white;
+      border: 1px solid orange;
+    }
