@@ -262,7 +262,8 @@ padding: 0rem 0rem 1.5rem 0rem; }
     padding: 1rem 2rem;
     margin: 1rem 0;
     letter-spacing: 0.5rem 0;
-    border-box: inline-block;
+    display: block;
+    border-radius: 5px;
   }
 
   .button:hover {
