@@ -251,6 +251,20 @@ padding: 0rem 0rem 1.5rem 0rem; }
     background-repeat: no-repeat;
 }
 
+.bg-kennedys {
+    background-image: url('/images/bg-kennedys.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-sofar {
+    background-image: url('/images/bg-sofar.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 /*--------------------- Buttonss ---------------------------*/
