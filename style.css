@@ -382,7 +382,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
   }
   
   .nav-link:hover{
-    color: dodgerblue;
+    color: orange;
   }
   
   .hamburger {
@@ -420,7 +420,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: plum;
+      background-color: rgb(22, 19, 19);
       width: 100%;
       text-align: center;
       transition: 0.3s;
