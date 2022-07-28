@@ -247,10 +247,9 @@ padding: 0rem 0rem 1.5rem 0rem; }
 .bg-rubikscube-featured {
     background-image: url('/images/rubikscube-featured.png');
     background-color: black;
-    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    padding-bottom:50%;
 }
 
 .bg-kennedys {
