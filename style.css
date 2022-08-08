@@ -230,7 +230,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
 
 .bg-rubikscube-2 {
     background-image: url('/images/rubikscube-2.jpg');
-    background-color: white;
+    background-color: #880002;
     background-size: cover;
     background-position: 0% 20%;
     background-repeat: no-repeat;
@@ -246,6 +246,14 @@ padding: 0rem 0rem 1.5rem 0rem; }
 
 .bg-rubikscube-featured {
     background-image: url('/images/rubikscube-featured.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom:50%;
+}
+
+.gigs-featured {
+  background-image: url('/images/gigs1-featured.jpeg');
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
