@@ -11,7 +11,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
         
-        
+
+<!-------
+        <customErrors defaultRedirect="GenericError.html" mode="On">
+            <error statusCode="404" redirect="notfound.html"/>
+        </customErrors>
+        -->
         
         <!----------------------- Gridlex ---------------------------->
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
@@ -20,8 +25,10 @@
           <!----------------------- Custom Stylesheet - always comes LAST, after Gridlex, Font etc. ---------------------------->      
     <link rel="stylesheet" type="text/css" href="/style.css" />
 
-    <!----------------------- Jekyll Page Title (with liquid-content-tag in curly brackets ) ---------------------------->
-    <title>{{page.title}}</title>
+    <!----------------------- Jekyll Page Title (with liquid-content-tag in curly brackets )
+        {{page.title}}
+         ---------------------------->
+    <title>Ryan Inglis Music</title>
 
 
 </head>
@@ -46,6 +53,9 @@
         <li class="nav-item">
           <a href="/services.html" class="nav-link">Services</a>
         </li>
+        <li class="nav-item">
+            <a href="/gigs.html" class="nav-link">Gigs</a>
+          </li>
         <li class="nav-item">
           <a href="/kontaktformular.html" class="nav-link">Contact</a>
         </li>
