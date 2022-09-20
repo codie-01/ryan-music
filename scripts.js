@@ -2,7 +2,6 @@
 $( document ).ready(function() {
 
 
-
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
     
@@ -16,4 +15,13 @@ $( document ).ready(function() {
       navMenu.classList.remove("active");
     }))
 
+});
+
+
+// Linktree JS
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
 });
