@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5%;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5;
+    background-color: rgb(209, 171, 167);
+    background-image: url("https://www.ryaninglis.com/images/caro-album-cover-crop.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    color: black;
+  }
+  
+  img {
+    max-width: 110px;
+    border-radius: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  nav a {
+    display: block;
+    border-radius: 2rem; 
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: center;
+    color: black;
+    background-color: rgba(209, 171, 167, 0.6);
+  }
+  
+  nav a:hover {
+    color: black;
+    /* box shadow: top bottom blur color */
+    box-shadow: 6px 6px 10px rgb(209, 171, 167);
+    transition: 0.4s;
+  }
+  
+  div {
+    text-align: center;
+  }
+  
+  /* Java Script */
+  #panel, #flip, #panel-2, #flip-2 {
+    border: solid 1px #c3c3c3;
+    border-radius: 2rem;
+  }
+  #panel {
+    padding: 50px;
+    display: none;
+    background-color: rgb(209, 171, 167);
+    color: black;
+  }
+  
+  .featured {
+    border: 5px solid rgb(181, 206, 175);
+  }
+  
+  .featured:hover {
+    box-shadow: 6px 6px 10px rgb(181, 206, 175);
+  }
+  
+  .featured-2 {
+    border: 5px solid rgb(181, 206, 175);
+  }
+  
+  h3 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2rem;
+  }
+  
+  h5 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 1.2rem;
+  }
+  
+   .copyright {
+      color: grey;
+      text-align: center;
+      font-size: 0.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+
+

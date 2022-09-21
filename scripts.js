@@ -25,3 +25,18 @@ $(document).ready(function(){
     $("#panel").slideToggle("slow");
   });
 });
+
+
+// CARO KELLEY Linktree JS
+
+$(document).ready(function(){
+  $("#flip-2").click(function(){
+    $("#panel-2").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#flip-3").click(function(){
+    $("#panel-3").slideToggle("slow");
+  });
+});
