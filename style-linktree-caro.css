@@ -10,10 +10,10 @@ body {
     box-sizing: border-box;
     line-height: 1.5;
     background-color: rgb(209, 171, 167);
-    background-image: url("https://www.ryaninglis.com/images/caro-album-cover-crop.jpg");
+    background-image: url("images/caro-album-cover-crop.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: right;
+    background-position: center;
     color: black;
   }
   
