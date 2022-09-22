@@ -49,11 +49,11 @@ body {
   }
   
   /* Java Script */
-  #panel, #flip, #panel-2, #flip-2 {
+  #panel, #panel-2, #panel-3, #flip, #flip-2, #flip-3 {
     border: solid 1px #c3c3c3;
     border-radius: 2rem;
   }
-  #panel {
+  #panel, #panel-2, #panel-3 {
     padding: 50px;
     display: none;
     background-color: rgb(209, 171, 167);
