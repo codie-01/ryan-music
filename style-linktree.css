@@ -11,9 +11,11 @@ body {
     line-height: 1.5;
     background-color: rgb(127, 137, 186);
     background-image: url("https://ryaninglis.com/images/ryan-stage.jpg");
-    background-attachment: fixed;
     background-size: cover;
-    background-position: right;
+    background-position: fixed;
+    top: 0; 
+    height:100vh; 
+    z-index:-1;
     color: white;
   }
   
