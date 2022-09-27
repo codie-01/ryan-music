@@ -10,17 +10,11 @@ body {
     box-sizing: border-box;
     line-height: 1.5;
     background-color: rgb(209, 171, 167);
-    color: black;
-  }
-
-  .bg-featured {
     background-image: url("images/caro-album-cover-crop.jpg");
+    background-attachment: fixed;
     background-size: cover;
-    background-position: fixed;
-    top: 0; 
-    height:100vh; 
-    z-index:-1;
-
+    background-position: center;
+    color: black;
   }
   
   img {
@@ -58,9 +52,9 @@ body {
   #panel, #panel-2, #panel-3, #flip, #flip-2, #flip-3 {
     border: solid 1px #c3c3c3;
     border-radius: 2rem;
+    overflow: hidden;
   }
   #panel, #panel-2, #panel-3 {
-    padding: 50px;
     display: none;
     background-color: rgb(209, 171, 167);
     color: black;
@@ -96,4 +90,11 @@ body {
       padding-top: 1rem;
     }
 
+    #yt-imawake { 
+      height: 43.2vw;
+    }
 
+    /* Problem: VIDEO BREAKING ITS CONTAINER: 
+    Right now your iframe has 2 attributes for width and height and these are set in px. This means if they are in a container that is smaller than those numbers it's going to break out. so instead of giving it a width in px try giving it a width of 100%.
+Now this will fix your breaking out of its container problem but can lead to a black bar problem. (some people think it's a problem and some don't care). to fix this takes a little more effort first we need to remove the height attribute. Next, we want to give it a class or an id that we can style and give that style a height in vw (we couldn't do this on the attribute because that only accepts px and %). I found for the I'm a wake video that a height: 43.2vw; worked fairly well if you also changed the padding on panels to 5% (this has to do with mocking px, % and vw ). Give that a go and let me know how you go :D
+*/
