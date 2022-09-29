@@ -10,14 +10,20 @@ body {
     box-sizing: border-box;
     line-height: 1.5;
     background-color: rgb(209, 171, 167);
-    background-image: url("images/caro-album-cover-crop.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     color: black;
   }
 
+  .bg-featured {
+    background-image: url("images/caro-album-cover-crop.jpg");
+    background-position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+
+  }
+
   /* 2) yep the property of background attachment: fixed; doesn't work on iPhones. Mac in their infinite wisdom decided that it was to memory intensive for their phones and disabled that property from working as intended. So in a media query, I disable all my background-attachment: fixed; by overriding them with background-attachment: initial; and depending on the design changing that background image. */
+  /*so that one isn't background-attachment: fixed but position: fixed; top:0; height:100vh and z-index:-1; which is a great workaround if you just have a single section page :D*/
 
 
   h5 {
