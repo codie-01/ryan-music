@@ -16,6 +16,18 @@ body {
     background-position: center;
     color: black;
   }
+
+  /* 2) yep the property of background attachment: fixed; doesn't work on iPhones. Mac in their infinite wisdom decided that it was to memory intensive for their phones and disabled that property from working as intended. So in a media query, I disable all my background-attachment: fixed; by overriding them with background-attachment: initial; and depending on the design changing that background image. */
+
+
+  h5 {
+    margin-top: 2rem;
+  }
+
+  h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
   
   img {
     max-width: 110px;
@@ -41,7 +53,7 @@ body {
     color: black;
     /* box shadow: top bottom blur color */
     box-shadow: 6px 6px 10px rgb(209, 171, 167);
-    transition: 0.4s;
+    transition: 0.2s;
   }
   
   div {
@@ -58,6 +70,8 @@ body {
     display: none;
     background-color: rgb(209, 171, 167);
     color: black;
+    line-height: 0;
+    padding: 5%;
   }
   
   .featured {
@@ -90,7 +104,7 @@ body {
       padding-top: 1rem;
     }
 
-    #yt-imawake { 
+    #youtube-imawake { 
       height: 43.2vw;
     }
 
@@ -98,3 +112,5 @@ body {
     Right now your iframe has 2 attributes for width and height and these are set in px. This means if they are in a container that is smaller than those numbers it's going to break out. so instead of giving it a width in px try giving it a width of 100%.
 Now this will fix your breaking out of its container problem but can lead to a black bar problem. (some people think it's a problem and some don't care). to fix this takes a little more effort first we need to remove the height attribute. Next, we want to give it a class or an id that we can style and give that style a height in vw (we couldn't do this on the attribute because that only accepts px and %). I found for the I'm a wake video that a height: 43.2vw; worked fairly well if you also changed the padding on panels to 5% (this has to do with mocking px, % and vw ). Give that a go and let me know how you go :D
 */
+
+/* Hey Carolin. Been a quick minute since I've seen that bug but that's the line space error. basically, it's treating your iframe as a word and leaving some space bellow it. Luckily this is based on line-height so if we give its parent div (#panel-2) a line height of 0 it will get rid of it :D */
