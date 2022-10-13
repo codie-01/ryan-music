@@ -441,3 +441,32 @@ padding: 0rem 0rem 1.5rem 0rem; }
       left: 0;
     }
   }
+
+
+  .fear-logo {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 7rem;
+    text-align: center;
+  }
+
+  .fear-font {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 2rem;
+  }
+
+  .slogan {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+    color: white;
+    line-height: 2rem;
+  }
+
+  .bg-fear {
+    background-image: url('/images/bg-fear.jpeg');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
