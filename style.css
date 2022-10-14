@@ -64,7 +64,7 @@ a {
 }
 
 a:hover { 
-    color: orange; 
+    color: #37b5fe; 
 }
 
 
@@ -78,7 +78,7 @@ header a {
 }
 
 header a:hover {   
-    border-bottom: 1px solid orange;    
+    border-bottom: 1px solid #37b5fe;    
 }
 
 header img {
@@ -166,7 +166,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
       
       form input:focus, 
       form textarea:focus {
-        border-color: orange;
+        border-color: #37b5fe;
       }
       
       textarea {
@@ -177,23 +177,23 @@ padding: 0rem 0rem 1.5rem 0rem; }
         /*---- change label from default display inline-block to display: block to set custom margin ----*/
         display: block;
         margin-top: 1rem;
-          color: orange;
+          color: #37b5fe;
           font-weight: bold;
         }
         
         form button {
-          background-color: orange;
+          background-color: #37b5fe;
           color: white;
-          border: 1px solid orange;
+          border: 1px solid #37b5fe;
           padding: 1rem 2rem;
           margin: 1rem 0;
           letter-spacing: 0.5rem 0;
         }
 
         button:hover {
-            color: orange;
+            color: #37b5fe;
             background-color: white;
-            border: 1px solid orange;
+            border: 1px solid #37b5fe;
           }
 
           .pointer { cursor: pointer; }
@@ -279,9 +279,9 @@ padding: 0rem 0rem 1.5rem 0rem; }
 /*--------------------- Buttons ---------------------------*/
 
 .button {
-    background-color: orange;
+    background-color: #37b5fe;
     color: white;
-    border: 1px solid orange;
+    border: 1px solid #37b5fe;
     padding: 1rem 2rem;
     margin: 1rem 0;
     letter-spacing: 0.5rem 0;
@@ -290,12 +290,28 @@ padding: 0rem 0rem 1.5rem 0rem; }
   }
 
   .button:hover {
-      color: orange;
+      color: #37b5fe;
       background-color: white;
-      border: 1px solid orange;
+      border: 1px solid #37b5fe;
     }
 
-
+    /*--------------------- Buttons inline ---------------------------*/
+    .button-inline {
+      background-color: #37b5fe;
+      color: white;
+      border: 1px solid #37b5fe;
+      padding: 1rem 2rem;
+      margin: 1rem 0;
+      letter-spacing: 0.5rem 0;
+      display: inline-block;
+      border-radius: 5px;
+    }
+  
+    .button-inline:hover {
+        color: #37b5fe;
+        background-color: white;
+        border: 1px solid #37b5fe;
+      }
 
 
 
@@ -389,7 +405,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
   }
   
   .nav-link:hover{
-    color: orange;
+    color: #37b5fe;
   }
   
   .hamburger {
@@ -442,12 +458,13 @@ padding: 0rem 0rem 1.5rem 0rem; }
     }
   }
 
-
+/*
   .fear-logo {
     font-family: 'Comforter Brush', cursive;
     font-size: 7rem;
     text-align: center;
   }
+  */
 
   .fear-font {
     font-family: 'Comforter Brush', cursive;
@@ -456,17 +473,21 @@ padding: 0rem 0rem 1.5rem 0rem; }
 
   .slogan {
     font-size: 1.3rem;
-    text-align: center;
     padding: 5%;
     margin: 5%;
-    color: white;
+    color: black;
     line-height: 2rem;
   }
 
   .bg-fear {
-    background-image: url('/images/bg-fear.jpeg');
+    background-image: url('/images/bg-fear-2.png');
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
+    max-width: 100%;;
+  }
+
+  .padded-max {
+    padding: 20%;
   }
