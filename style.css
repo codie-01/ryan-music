@@ -488,3 +488,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
     background-position: center;
     max-width: 100%;;
   }
+
+  .color-blue {
+    color: #37b5fe;
+  }
