@@ -232,7 +232,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
     background-image: url('/images/rubikscube-2.jpg');
     background-color: #880002;
     background-size: cover;
-    background-position: 0% 20%;
+    background-position: right;
     background-repeat: no-repeat;
 }
 
@@ -486,8 +486,4 @@ padding: 0rem 0rem 1.5rem 0rem; }
     background-repeat: no-repeat;
     background-position: center;
     max-width: 100%;;
-  }
-
-  .padded-max {
-    padding: 20%;
   }
