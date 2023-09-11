@@ -393,7 +393,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
   .nav-menu {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
   }
   
   .nav-branding {
@@ -488,6 +488,7 @@ padding: 0rem 0rem 1.5rem 0rem; }
     background-position: center;
     max-width: 100%;;
   }
+
 
   .color-blue {
     color: #37b5fe;
