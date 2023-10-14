@@ -274,6 +274,15 @@ padding: 0rem 0rem 1.5rem 0rem; }
     background-repeat: no-repeat;
 }
 
+.bg-weltraum-ep {
+  background-image: url('/images/ryan_weltraum_ep.jpg');
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+}
+
 
 
 /*--------------------- Buttons ---------------------------*/
@@ -466,10 +475,12 @@ padding: 0rem 0rem 1.5rem 0rem; }
   }
   */
 
+  /*
   .fear-font {
     font-family: 'Comforter Brush', cursive;
     font-size: 2rem;
   }
+  */
 
   .slogan {
     font-size: 1rem;
