@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(22, 19, 19);
+    background-color: #231f20;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     color: white;
@@ -22,15 +22,16 @@ div, p, h1, h2 {
 /*--------------------- Typography ---------------------------*/
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Cinzel', serif;
     font-weight: 400;
     letter-spacing: 0.4rem;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
 }
 
 h3 {
@@ -46,7 +47,6 @@ h5 {
 
 p {
     font-size: 1rem;
-    line-height: 1.6rem;
 }
 
 .smaller {
@@ -149,6 +149,8 @@ padding: 0rem 0rem 1.5rem 0rem; }
 .tall-60 { min-height: 60vh; }
 .tall-70 {min-height: 70vh; }
 .tall-90 { min-height: 90vh; }
+.tall-100 {min-height: 100vh;}
+.tall-150 {min-height: 150vh;}
 
 
 
@@ -218,6 +220,91 @@ padding: 0rem 0rem 1.5rem 0rem; }
  .bg-white {
     background-color: white;
     color: black;
+ }
+
+
+/*-----*/
+
+/* Container styling */
+.container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap;
+  height: 100vh; /* Ensure the container takes the full viewport height */
+}
+
+.container .rofm-lap-1, .container .text-container {
+  flex: 1;
+  min-width: 300px; /* Adjust based on your layout needs */
+}
+
+/* Image container styling */
+.rofm-lap-1 {
+  background-image: url('/images/rofm-lap-1.png');
+  background-size: contain; /* Adjust size of the background image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Text container styling */
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Ensure the text is centered vertically */
+  padding: 10%; /* Ensure padding is applied */
+}
+
+/* Padding for text elements */
+.text-container h1,
+.text-container h2,
+.text-container p {
+  padding: 10%; /* Padding for individual text elements */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: space-evenly; /* Distribute buttons evenly */
+  align-items: center; /* Center buttons vertically if needed */
+  margin-top: 20px; /* Optional: Add margin to the top */
+}
+
+.button1 {
+  padding: 10px 20px; /* Add padding to the buttons */
+  text-decoration: none; /* Remove underline from links */
+  background-color: #007bff; /* Background color for buttons */
+  color: white; /* Text color for buttons */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button1:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
+
+
+
+
+
+ .rofm-mob-1 {
+  background-image: url('/images/rofm-mob-1.png');
+  background-color: white;
+  background-size: cover;
+  background-position: 20% 10%;
+  background-repeat: no-repeat;
  }
 
  .bg-rubikscube {
@@ -467,20 +554,6 @@ padding: 0rem 0rem 1.5rem 0rem; }
     }
   }
 
-/*
-  .fear-logo {
-    font-family: 'Comforter Brush', cursive;
-    font-size: 7rem;
-    text-align: center;
-  }
-  */
-
-  /*
-  .fear-font {
-    font-family: 'Comforter Brush', cursive;
-    font-size: 2rem;
-  }
-  */
 
   .slogan {
     font-size: 1rem;
