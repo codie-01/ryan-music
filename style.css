@@ -11,13 +11,56 @@ body {
     color: white;
 }
 
+/*----------------------------------- Header --------------------------------------*/
 
-/*--------------------- Temporary Styles ------------------
 
-div, p, h1, h2 {
-    border: 1px solid lightblue;
+header a {  
+  padding: 0.25rem; 
+  margin-right: 1rem;
+  box-sizing: inline-block;
 }
----------*/
+
+header a:hover {   
+  border-bottom: 1px solid #37b5fe;    
+}
+
+header img {
+  max-width: 100px;
+}
+
+/*----------------------------------- Footer ----------------------------------*/   
+
+footer a {  
+  margin: 0rem 0.5rem;    
+}
+
+footer a:hover { 
+  border: none;      
+}
+
+header img {
+  max-width: 100px;
+}
+
+footer img {
+  max-width: 120px;
+  margin-left: 3rem;
+}
+
+footer p, h4 {
+  margin: 0.5rem;
+}
+
+footer nav a {
+  display: block;
+}
+
+
+.copyright {
+opacity: 0.5;
+padding: 0rem 0rem 1.5rem 0rem; }
+.copyright a:hover {    border: none;                   }
+.copyright p {          font-size: 0.7rem;           }
 
 /*--------------------- Typography ---------------------------*/
 
@@ -54,8 +97,6 @@ p {
 }
 
 
-
-
 /*----------------------------------- Links & Buttons --------------------------------------*/
 
 a {
@@ -67,57 +108,47 @@ a:hover {
     color: #37b5fe; 
 }
 
-
-/*----------------------------------- Header --------------------------------------*/
-
-
-header a {  
-    padding: 0.25rem; 
-    margin-right: 1rem;
-    border-box: inline-block;
+.fa-brands {
+  color:white;
+  font-size: 2rem;
+  transition: all 0.3s;
 }
 
-header a:hover {   
-    border-bottom: 1px solid #37b5fe;    
+.button1 {
+  padding: 10px 20px; /* Add padding to the buttons */
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Text color for buttons */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
-header img {
-    max-width: 100px;
+.button2 {
+  padding: 6px 16px; /* Add padding to the buttons */
+  text-decoration: none; /* Remove underline from links */
+  background-color: white; /* Background color for buttons */
+  color: #231f20; /* Text color for buttons */
+  border-radius: 20px; /* Optional: Add rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
-/*----------------------------------- Footer ----------------------------------*/   
-
-footer a {  
-    margin: 0rem 0.5rem;    
+.button1:hover {
+  transform: scale(1.2); /* Adjusted scale factor */
 }
 
-footer a:hover { 
-    border: none;      
+.button2:hover {
+  transform: scale(1.05); /* Smaller scale factor for the contact button */
+  color: #231f20;
 }
 
-header img {
-    max-width: 100px;
+/* Grow Effect */
+a.grow {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
-footer img {
-    max-width: 120px;
-    margin-left: 3rem;
+a.grow:hover {
+  transform: scale(1.2); /* Adjusted scale factor to match button1 */
 }
-
-footer p, h4 {
-    margin: 0.5rem;
-}
-
-footer nav a {
-    display: block;
-}
-
-
-.copyright {
-opacity: 0.5;
-padding: 0rem 0rem 1.5rem 0rem; }
-.copyright a:hover {    border: none;                   }
-.copyright p {          font-size: 0.7rem;           }
 
 
 /*------------------------------------ Reusable Styles ---------------------------------------*/
@@ -151,9 +182,6 @@ padding: 0rem 0rem 1.5rem 0rem; }
 .tall-90 { min-height: 90vh; }
 .tall-100 {min-height: 100vh;}
 .tall-150 {min-height: 150vh;}
-
-
-
 
      /*----------------------- Kontaktformular -----------------------*/
      form input, form textarea {
@@ -273,18 +301,6 @@ padding: 0rem 0rem 1.5rem 0rem; }
   margin-top: 20px; /* Optional: Add margin to the top */
 }
 
-.button1 {
-  padding: 10px 20px; /* Add padding to the buttons */
-  text-decoration: none; /* Remove underline from links */
-  background-color: #007bff; /* Background color for buttons */
-  color: white; /* Text color for buttons */
-  border-radius: 5px; /* Optional: Add rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.button1:hover {
-  background-color: #0056b3; /* Darker background color on hover */
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -555,25 +571,88 @@ padding: 0rem 0rem 1.5rem 0rem; }
   }
 
 
-  .slogan {
-    font-size: 1rem;
-    text-align: center;
-    padding: 5%;
-    margin: 5%;
-    color: black;
-    line-height: 2rem;
-  }
-
-  .bg-fear {
-    background-image: url('/images/bg-fear-2.png');
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 100%;;
-  }
-
-
   .color-blue {
     color: #37b5fe;
   }
+
+
+ /* Header and Footer Styles */
+  /* Header and Footer Styles */
+   /* Header and Footer Styles */
+  /* Header and Footer Styles */
+header, footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+}
+
+header {
+  margin-bottom: 10px; /* Ensure space between header and content */
+}
+
+footer {
+  margin-top: 10px; /* Ensure space between footer and content */
+}
+
+/* Section container styling */
+section.container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap;
+  margin: 10px auto; /* Space around the section */
+  padding: 0 10px;
+  background-color: #231f20/* Example background color */
+  z-index: 1;
+  max-width: 1200px; /* Ensure it doesn't stretch too wide */
+}
+
+/* Specific container child elements */
+.container .rofm-lap-1, .container .text-container {
+  flex: 1;
+  min-width: 300px; /* Adjust based on your layout needs */
+}
+
+/* Image container styling */
+.rofm-lap-1 {
+  background-image: url('/images/rofm-lap-1.png');
+  background-size: contain; /* Adjust size of the background image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Text container styling */
+.text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /* Ensure the text is centered vertically */
+  padding: 5% 0; /* Ensure padding is applied */
+}
+
+/* Padding for text elements */
+.text-container h1,
+.text-container h2,
+.text-container p {
+  padding:10%; /* Padding for individual text elements */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: space-evenly; /* Distribute buttons evenly */
+  align-items: center; /* Center buttons vertically if needed */
+  margin-top: 20px; /* Optional: Add margin to the top */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: auto; /* Adjust height for smaller screens */
+  }
+}
