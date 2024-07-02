@@ -183,7 +183,7 @@ a.grow:hover {
 .tall-100 {min-height: 100vh;}
 .tall-150 {min-height: 150vh;}
 
-     /*----------------------- Kontaktformular -----------------------*/
+     /*----------------------- Contact Form -----------------------*/
      form input, form textarea {
         width: 100%;
         margin: 0.5rem 0;
@@ -235,7 +235,6 @@ a.grow:hover {
         form p a {
           text-decoration: underline;
         }
-
 
 /*--------------------------------------------------------------------------------------------------------*/
 
