@@ -148,6 +148,44 @@ a.grow:hover {
   transform: scale(1.2);
 }
 
+
+/*--------------------- Buttons ---------------------------*/
+
+.button {
+  background-color: #37b5fe;
+  color: white;
+  border: 1px solid #37b5fe;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.5rem 0;
+  display: block;
+  border-radius: 5px;
+}
+
+.button:hover {
+  color: #37b5fe;
+  background-color: white;
+  border: 1px solid #37b5fe;
+}
+
+/* Buttons inline */
+.button-inline {
+  background-color: #37b5fe;
+  color: white;
+  border: 1px solid #37b5fe;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.5rem 0;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.button-inline:hover {
+  color: #37b5fe;
+  background-color: white;
+  border: 1px solid #37b5fe;
+}
+
 /*------------------------------------ Reusable Styles ---------------------------------------*/
 
 .left           { text-align: left; }
@@ -178,59 +216,6 @@ a.grow:hover {
 .tall-100 { min-height: 100vh; }
 .tall-150 { min-height: 150vh; }
 
-/*----------------------- Kontaktformular -----------------------*/
-form input, form textarea {
-    width: 100%;
-    margin: 0.5rem 0;
-    border: 2px solid grey;
-    padding: 0.5rem;
-    outline: none;
-    font-family: inherit;
-    font-size: 0.9rem;
-}
-
-form input:focus, 
-form textarea:focus {
-    border-color: #37b5fe;
-}
-
-textarea {
-    min-height: 9rem;
-}
-
-form label {
-    display: block;
-    margin-top: 1rem;
-    color: #37b5fe;
-    font-weight: bold;
-}
-
-form button {
-    background-color: #37b5fe;
-    color: white;
-    border: 1px solid #37b5fe;
-    padding: 1rem 2rem;
-    margin: 1rem 0;
-    letter-spacing: 0.5rem 0;
-}
-
-button:hover {
-    color: #37b5fe;
-    background-color: white;
-    border: 1px solid #37b5fe;
-}
-
-.pointer { cursor: pointer; }
-
-form p {
-    font-size: 0.7rem;
-}
-
-form p a {
-    text-decoration: underline;
-}
-
-/*--------------------------------------------------------------------------------------------------------*/
 
  /*--------------------- Background Images ---------------------------*/
 
@@ -376,43 +361,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 100%;
-}
-
-/*--------------------- Buttons ---------------------------*/
-
-.button {
-  background-color: #37b5fe;
-  color: white;
-  border: 1px solid #37b5fe;
-  padding: 1rem 2rem;
-  margin: 1rem 0;
-  letter-spacing: 0.5rem 0;
-  display: block;
-  border-radius: 5px;
-}
-
-.button:hover {
-  color: #37b5fe;
-  background-color: white;
-  border: 1px solid #37b5fe;
-}
-
-/* Buttons inline */
-.button-inline {
-  background-color: #37b5fe;
-  color: white;
-  border: 1px solid #37b5fe;
-  padding: 1rem 2rem;
-  margin: 1rem 0;
-  letter-spacing: 0.5rem 0;
-  display: inline-block;
-  border-radius: 5px;
-}
-
-.button-inline:hover {
-  color: #37b5fe;
-  background-color: white;
-  border: 1px solid #37b5fe;
 }
 
 /*------------------------------------ Responsiveness ----------------------------------------*/
@@ -592,3 +540,58 @@ footer {
     height: auto;
   }
 }
+
+
+/*----------------------- Kontaktformular -----------------------*/
+form input, form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 2px solid grey;
+  padding: 0.5rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+form input:focus, 
+form textarea:focus {
+  border-color: #37b5fe;
+}
+
+textarea {
+  min-height: 9rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  color: #37b5fe;
+  font-weight: bold;
+}
+
+form button {
+  background-color: #37b5fe;
+  color: white;
+  border: 1px solid #37b5fe;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.5rem 0;
+}
+
+button:hover {
+  color: #37b5fe;
+  background-color: white;
+  border: 1px solid #37b5fe;
+}
+
+.pointer { cursor: pointer; }
+
+form p {
+  font-size: 0.7rem;
+}
+
+form p a {
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
