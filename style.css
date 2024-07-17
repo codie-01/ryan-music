@@ -13,7 +13,6 @@ body {
 
 /*----------------------------------- Header --------------------------------------*/
 
-
 header a {  
   padding: 0.25rem; 
   margin-right: 1rem;
@@ -38,10 +37,6 @@ footer a:hover {
   border: none;      
 }
 
-header img {
-  max-width: 100px;
-}
-
 footer img {
   max-width: 120px;
   margin-left: 3rem;
@@ -55,12 +50,16 @@ footer nav a {
   display: block;
 }
 
-
 .copyright {
-opacity: 0.5;
-padding: 0rem 0rem 1.5rem 0rem; }
-.copyright a:hover {    border: none;                   }
-.copyright p {          font-size: 0.7rem;           }
+  opacity: 0.5;
+  padding: 0rem 0rem 1.5rem 0rem;
+}
+.copyright a:hover {
+  border: none;
+}
+.copyright p {
+  font-size: 0.7rem;
+}
 
 /*--------------------- Typography ---------------------------*/
 
@@ -96,7 +95,6 @@ p {
     font-size: 1.3rem;
 }
 
-
 /*----------------------------------- Links & Buttons --------------------------------------*/
 
 a {
@@ -109,33 +107,33 @@ a:hover {
 }
 
 .fa-brands {
-  color:white;
+  color: white;
   font-size: 2rem;
   transition: all 0.3s;
 }
 
 .button1 {
-  padding: 10px 20px; /* Add padding to the buttons */
-  text-decoration: none; /* Remove underline from links */
-  color: white; /* Text color for buttons */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .button2 {
-  padding: 6px 16px; /* Add padding to the buttons */
-  text-decoration: none; /* Remove underline from links */
-  background-color: white; /* Background color for buttons */
-  color: #231f20; /* Text color for buttons */
-  border-radius: 20px; /* Optional: Add rounded corners */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  padding: 6px 16px;
+  text-decoration: none;
+  background-color: white;
+  color: #231f20;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .button1:hover {
-  transform: scale(1.2); /* Adjusted scale factor */
+  transform: scale(1.2);
 }
 
 .button2:hover {
-  transform: scale(1.05); /* Smaller scale factor for the contact button */
+  transform: scale(1.05);
   color: #231f20;
 }
 
@@ -143,237 +141,232 @@ a:hover {
 a.grow {
   display: inline-block;
   transform: scale(1);
-  transition: transform 0.3s; /* Smooth transition for hover effect */
+  transition: transform 0.3s;
 }
 
 a.grow:hover {
-  transform: scale(1.2); /* Adjusted scale factor to match button1 */
+  transform: scale(1.2);
 }
-
 
 /*------------------------------------ Reusable Styles ---------------------------------------*/
 
-.left           {   text-align:     left;       }
-.center         {   text-align:     center;     }
-.right          {   text-align:     right;      }
+.left           { text-align: left; }
+.center         { text-align: center; }
+.right          { text-align: right; }
 
-.padded         {   padding:        5%;         }
-.padded-0       {   padding:        0;          }
-.padded-1       {   padding:        1rem;       }
-.padded-2       {   padding:        2%;         }
-.padded-5       {   padding:        5%;         }
-.padded-10      {   padding:        5% 10%;     }
-.padded-b       {   padding-bottom: 5%;         }
-.padded-r       {   padding-right:  5%;         }
-.padded-l       {   padding-left:   5%;         }
-.padded-t       {   padding-top:    5%;         }
+.padded         { padding: 5%; }
+.padded-0       { padding: 0; }
+.padded-1       { padding: 1rem; }
+.padded-2       { padding: 2%; }
+.padded-5       { padding: 5%; }
+.padded-10      { padding: 5% 10%; }
+.padded-b       { padding-bottom: 5%; }
+.padded-r       { padding-right: 5%; }
+.padded-l       { padding-left: 5%; }
+.padded-t       { padding-top: 5%; }
 
-.padded-footer  {    padding:       2% 5% 2% 5%;  }
-.border-r       {   border-right: 1px solid white}
-.border-b       {   border-bottom: 1px solid white;
-                    padding: 2rem;}
-.border-r-dark       {   border-right: 1px solid black}
-.border-b-dark       {   border-bottom: 1px solid black;
-                                        padding: 2rem;}
+.padded-footer  { padding: 2% 5% 2% 5%; }
+.border-r       { border-right: 1px solid white; }
+.border-b       { border-bottom: 1px solid white; padding: 2rem; }
+.border-r-dark  { border-right: 1px solid black; }
+.border-b-dark  { border-bottom: 1px solid black; padding: 2rem; }
 
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
-.tall-70 {min-height: 70vh; }
+.tall-70 { min-height: 70vh; }
 .tall-90 { min-height: 90vh; }
-.tall-100 {min-height: 100vh;}
-.tall-150 {min-height: 150vh;}
+.tall-100 { min-height: 100vh; }
+.tall-150 { min-height: 150vh; }
 
-     /*----------------------- Contact Form -----------------------*/
-     form input, form textarea {
-        width: 100%;
-        margin: 0.5rem 0;
-        border: 2px solid grey;
-        padding: 0.5rem;
-        outline: none;
-        font-family: inherit;
-        font-size: 0.9rem;
-      }
-      
-      form input:focus, 
-      form textarea:focus {
-        border-color: #37b5fe;
-      }
-      
-      textarea {
-        min-height: 9rem;
-      }
-    
-      form label {
-        /*---- change label from default display inline-block to display: block to set custom margin ----*/
-        display: block;
-        margin-top: 1rem;
-          color: #37b5fe;
-          font-weight: bold;
-        }
-        
-        form button {
-          background-color: #37b5fe;
-          color: white;
-          border: 1px solid #37b5fe;
-          padding: 1rem 2rem;
-          margin: 1rem 0;
-          letter-spacing: 0.5rem 0;
-        }
+/*----------------------- Kontaktformular -----------------------*/
+form input, form textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    border: 2px solid grey;
+    padding: 0.5rem;
+    outline: none;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
 
-        button:hover {
-            color: #37b5fe;
-            background-color: white;
-            border: 1px solid #37b5fe;
-          }
+form input:focus, 
+form textarea:focus {
+    border-color: #37b5fe;
+}
 
-          .pointer { cursor: pointer; }
-    
-        form p {
-            font-size: 0.7rem;
-        }
-    
-        form p a {
-          text-decoration: underline;
-        }
+textarea {
+    min-height: 9rem;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    color: #37b5fe;
+    font-weight: bold;
+}
+
+form button {
+    background-color: #37b5fe;
+    color: white;
+    border: 1px solid #37b5fe;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    letter-spacing: 0.5rem 0;
+}
+
+button:hover {
+    color: #37b5fe;
+    background-color: white;
+    border: 1px solid #37b5fe;
+}
+
+.pointer { cursor: pointer; }
+
+form p {
+    font-size: 0.7rem;
+}
+
+form p a {
+    text-decoration: underline;
+}
 
 /*--------------------------------------------------------------------------------------------------------*/
 
  /*--------------------- Background Images ---------------------------*/
 
- img {   
+img {   
     max-width: 100%;    
 }
 
- .bg-white {
+.bg-white {
     background-color: white;
     color: black;
- }
-
-
-/*-----*/
-
-/* Container styling */
+}
+/* Base container styling */
 .container {
   display: flex;
-  align-items: center; /* Center items vertically */
-  flex-wrap: wrap;
-  height: 100vh; /* Ensure the container takes the full viewport height */
-}
-
-.container .rofm-lap-1, .container .text-container {
-  flex: 1;
-  min-width: 300px; /* Adjust based on your layout needs */
-}
-
-/* Image container styling */
-.rofm-lap-1 {
-  background-image: url('/images/rofm-lap-1.png');
-  background-size: contain; /* Adjust size of the background image */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating the image */
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  flex-wrap: wrap;
+  margin: 10px auto 0 auto; /* Centering the container */
+  padding: 0 10px;
+  background-color: #231f20; /* Consistent background color */
+  z-index: 1;
+  max-width: 1200px;
+  height: auto;
+  flex-direction: column; /* Stack items vertically by default */
 }
 
-/* Text container styling */
-.text-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column; /* Ensure the text is centered vertically */
-  padding: 10%; /* Ensure padding is applied */
+/* Flex properties for container children */
+.container .image-container, .container .text-container {
+  flex: 1;
+  min-width: 300px;
 }
 
-/* Padding for text elements */
-.text-container h1,
-.text-container h2,
-.text-container p {
-  padding: 10%; /* Padding for individual text elements */
+/* Styling for image container */
+.image-container img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .image-container img, .text-container {
+    height: 50vh; 
+  }
+}
+
+/* Adjustments for screens wider than 768px */
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row; /* Side by side for larger screens */
+    width: auto; /* Adjust width as necessary */
+  }
+
+  .image-container img {
+    height: 90vh;
+    width: 100%; 
+  }
+
+  .text-container {
+    width: 50%; 
+  }
 }
 
 /* Button container styling */
 .button-container {
   display: flex;
-  justify-content: space-evenly; /* Distribute buttons evenly */
-  align-items: center; /* Center buttons vertically if needed */
-  margin-top: 20px; /* Optional: Add margin to the top */
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    height: auto; /* Adjust height for smaller screens */
-  }
-}
-
-
-
-
-
-
- .rofm-mob-1 {
+/* Specific background images for different sections */
+.rofm-mob-1 {
   background-image: url('/images/rofm-mob-1.png');
   background-color: white;
   background-size: cover;
   background-position: 20% 10%;
   background-repeat: no-repeat;
- }
+}
 
- .bg-rubikscube {
-    background-image: url('/images/rubikscube-1.png');
-    background-color: white;
-    background-size: cover;
-    background-position: 20% 10%;
-    background-repeat: no-repeat;
+.bg-rubikscube {
+  background-image: url('/images/rubikscube-1.png');
+  background-color: white;
+  background-size: cover;
+  background-position: 20% 10%;
+  background-repeat: no-repeat;
 }
 
 .bg-rubikscube-2 {
-    background-image: url('/images/rubikscube-2.jpg');
-    background-color: #880002;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
+  background-image: url('/images/rubikscube-2.jpg');
+  background-color: #880002;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .bg-vtktm {
-    background-image: url('/images/vtktm-band.jpg');
-    background-color: black;
-    background-size: cover;
-    background-position: 0% 20%;
-    background-repeat: no-repeat;
+  background-image: url('/images/vtktm-band.jpg');
+  background-color: black;
+  background-size: cover;
+  background-position: 0% 20%;
+  background-repeat: no-repeat;
 }
 
 .bg-rubikscube-featured {
-    background-image: url('/images/rubikscube-featured.png');
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom:50%;
+  background-image: url('/images/rubikscube-featured.png');
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50%;
 }
 
 .gigs-featured {
   background-image: url('/images/gigs1-featured.jpeg');
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom:50%;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50%;
 }
 
 .bg-kennedys {
-    background-image: url('/images/bg-kennedys.png');
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url('/images/bg-kennedys.png');
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-sofar {
-    background-image: url('/images/bg-sofar.png');
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url('/images/bg-sofar.png');
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-weltraum-ep {
@@ -385,200 +378,172 @@ a.grow:hover {
   max-width: 100%;
 }
 
-
-
 /*--------------------- Buttons ---------------------------*/
 
 .button {
-    background-color: #37b5fe;
-    color: white;
-    border: 1px solid #37b5fe;
-    padding: 1rem 2rem;
-    margin: 1rem 0;
-    letter-spacing: 0.5rem 0;
-    display: block;
-    border-radius: 5px;
-  }
+  background-color: #37b5fe;
+  color: white;
+  border: 1px solid #37b5fe;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.5rem 0;
+  display: block;
+  border-radius: 5px;
+}
 
-  .button:hover {
-      color: #37b5fe;
-      background-color: white;
-      border: 1px solid #37b5fe;
-    }
+.button:hover {
+  color: #37b5fe;
+  background-color: white;
+  border: 1px solid #37b5fe;
+}
 
-    /*--------------------- Buttons inline ---------------------------*/
-    .button-inline {
-      background-color: #37b5fe;
-      color: white;
-      border: 1px solid #37b5fe;
-      padding: 1rem 2rem;
-      margin: 1rem 0;
-      letter-spacing: 0.5rem 0;
-      display: inline-block;
-      border-radius: 5px;
-    }
-  
-    .button-inline:hover {
-        color: #37b5fe;
-        background-color: white;
-        border: 1px solid #37b5fe;
-      }
+/* Buttons inline */
+.button-inline {
+  background-color: #37b5fe;
+  color: white;
+  border: 1px solid #37b5fe;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.5rem 0;
+  display: inline-block;
+  border-radius: 5px;
+}
 
+.button-inline:hover {
+  color: #37b5fe;
+  background-color: white;
+  border: 1px solid #37b5fe;
+}
 
-
-
-    /*------------------------------------ Responsiveness ----------------------------------------*/
-      /*--------------------- Responsiveness ---------------------------*/
-        /*--------------------- Responsiveness ---------------------------*/
-          /*--------------------- Responsiveness ---------------------------*/
-
-    /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+/*------------------------------------ Responsiveness ----------------------------------------*/
 
 .show-xs, 
 .show-sm,
 .show-md {
-	display: none;
+  display: none;
 }
 
-/* ------- MD Media Query (64em / 1024px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
-
+/* MD Media Query (64em / 1024px) */
 @media (max-width: 64em) {
   .show-md { display: block; }
-  .hide-md { display: none;  }
+  .hide-md { display: none; }
 }
 
-/* ------- SM Media Query (48em / 768px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
-
+/* SM Media Query (48em / 768px) */
 @media (max-width: 48em) {
   .show-sm { display: block; }
-  .hide-sm { display: none;  }
-	 
+  .hide-sm { display: none; }
   .sm-text-center { text-align: center; }
   .sm-text-left { text-align: left; }
   .sm-text-right { text-align: right; }
-
   .sm-padded { padding: 5%; }
   .sm-padded-1 { padding: 1rem; }
   .sm-padded-05 { padding: 0.5rem; }
-
   .sm-padded-t-0 { padding-top: 0; }
   .sm-padded-b-0 { padding-bottom: 0; }
   .sm-padded-l-0 { padding-left: 0; }
   .sm-padded-r-0 { padding-right: 0; }
-  
   .sm-margin-t-0 { margin-top: 0; }
   .sm-margin-b-0 { margin-bottom: 0; }
   .sm-margin-l-0 { margin-left: 0; }
   .sm-margin-r-0 { margin-right: 0; }
 }
 
-/* ------- XS Media Query (36em / 576px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
-
+/* XS Media Query (36em / 576px) */
 @media (max-width: 36em) {
   .show-xs { display: block; }
-  .hide-xs { display: none;  }
+  .hide-xs { display: none; }
 }
 
-  /*--------------------- Responsiveness ---------------------------*/
-    /*--------------------- Responsiveness ---------------------------*/
-      /*--------------------- Responsiveness ---------------------------*/
+/*--------------------- Hamburger-Menu CSS  ---------------------------*/
 
+li {
+  list-style: none;
+}
 
-  /*--------------------- Hamburger-Menu CSS  ---------------------------*/
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px 0px 24px;
+  margin-top: -25px;
+  margin-bottom: -10px;
+}
 
-  li {
-    list-style: none;
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: #37b5fe;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width: 768px){
+  .hamburger{
+    display: block;
   }
   
-  .navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
   }
   
   .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(22, 19, 19);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
   }
   
-  .nav-branding {
-    font-size: 2rem;
+  .nav-item {
+    margin: 16px 0;
   }
   
-  .nav-link {
-    transition: 0.7s ease;
+  .nav-menu.active {
+    left: 0;
   }
-  
-  .nav-link:hover{
-    color: #37b5fe;
-  }
-  
-  .hamburger {
-    cursor: pointer;
-    display: none;
-  }
-  
-  .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
-  
-  @media(max-width:768px){
-    .hamburger{
-      display: block;
-    }
-    
-    .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-      .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-    
-    .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: rgb(22, 19, 19);
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-    
-    .nav-item {
-      margin: 16px 0;
-    }
-    
-    .nav-menu.active {
-      left: 0;
-    }
-  }
+}
 
+.color-blue {
+  color: #37b5fe;
+}
 
-  .color-blue {
-    color: #37b5fe;
-  }
-
-
- /* Header and Footer Styles */
-  /* Header and Footer Styles */
-   /* Header and Footer Styles */
-  /* Header and Footer Styles */
+/* Header and Footer Styles */
 header, footer {
   position: relative;
   z-index: 10;
@@ -588,70 +553,42 @@ header, footer {
 }
 
 header {
-  margin-bottom: 10px; /* Ensure space between header and content */
+  margin-bottom: 10px;
 }
 
 footer {
-  margin-top: 10px; /* Ensure space between footer and content */
-}
-
-/* Section container styling */
-section.container {
-  display: flex;
-  align-items: center; /* Center items vertically */
-  flex-wrap: wrap;
-  margin: 10px auto; /* Space around the section */
-  padding: 0 10px;
-  background-color: #231f20/* Example background color */
-  z-index: 1;
-  max-width: 1200px; /* Ensure it doesn't stretch too wide */
-}
-
-/* Specific container child elements */
-.container .rofm-lap-1, .container .text-container {
-  flex: 1;
-  min-width: 300px; /* Adjust based on your layout needs */
-}
-
-/* Image container styling */
-.rofm-lap-1 {
-  background-image: url('/images/rofm-lap-1.png');
-  background-size: contain; /* Adjust size of the background image */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent repeating the image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* Text container styling */
 .text-container {
   display: flex;
   justify-content: center;
-  flex-direction: column; /* Ensure the text is centered vertically */
-  padding: 5% 0; /* Ensure padding is applied */
+  flex-direction: column;
+  padding: 10%;
 }
 
-/* Padding for text elements */
 .text-container h1,
 .text-container h2,
 .text-container p {
-  padding:10%; /* Padding for individual text elements */
+  padding: 5%;
 }
 
 /* Button container styling */
 .button-container {
   display: flex;
-  justify-content: space-evenly; /* Distribute buttons evenly */
-  align-items: center; /* Center buttons vertically if needed */
-  margin-top: 20px; /* Optional: Add margin to the top */
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
-      flex-direction: column;
-      height: auto; /* Adjust height for smaller screens */
+    flex-direction: column;
+    height: auto;
   }
 }
