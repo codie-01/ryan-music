@@ -13,10 +13,17 @@ body {
 
 /*----------------------------------- Header --------------------------------------*/
 
+header {
+  width: 100%; 
+  box-sizing: border-box; 
+  background-color: #333; 
+  padding: 10px; 
+}
+
 header a {  
   padding: 0.25rem; 
   margin-right: 1rem;
-  box-sizing: inline-block;
+  display: inline-block; 
 }
 
 header a:hover {   
@@ -28,6 +35,13 @@ header img {
 }
 
 /*----------------------------------- Footer ----------------------------------*/   
+
+footer {
+  width: 100%; 
+  box-sizing: border-box; 
+  background-color: #333; 
+  padding: 10px; 
+}
 
 footer a {  
   margin: 0rem 0.5rem;    
@@ -43,7 +57,7 @@ footer img {
 }
 
 footer p, h4 {
-  margin: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 footer nav a {
@@ -232,11 +246,10 @@ a.grow:hover {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px auto 0 auto; /* Centering the container */
-  padding: 0 10px;
+  margin: 10px 0;
   background-color: #231f20; /* Consistent background color */
   z-index: 1;
-  max-width: 1200px;
+  width: 100%;
   height: auto;
   flex-direction: column; /* Stack items vertically by default */
 }
@@ -270,7 +283,7 @@ a.grow:hover {
 @media (min-width: 769px) {
   .container {
     flex-direction: row; /* Side by side for larger screens */
-    width: auto; /* Adjust width as necessary */
+    width: 100%; /* Adjust width as necessary */
   }
 
   .image-container img {
@@ -492,12 +505,13 @@ li {
 }
 
 /* Header and Footer Styles */
-header, footer {
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  background-color: #333;
-  padding: 10px;
+header {
+  width: 100%; 
+  background-color: #333; 
+  padding: 10px; 
+  box-sizing: border-box; 
+  position: static; 
+  z-index: auto; 
 }
 
 header {
@@ -516,7 +530,6 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10%;
 }
 
 .text-container h1,
@@ -595,3 +608,60 @@ form p a {
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
+
+/* Footer Styles */
+footer.grid.padded-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+footer.grid.padded-footer .col-3,
+footer.grid.padded-footer .col-1,
+footer.grid.padded-footer .col-3_sm-4_xs-12,
+footer.grid.padded-footer .col-2_sm-4_xs-12 {
+  flex: 1;
+  min-width: 150px; /* Adjust as needed */
+  margin: 10px;
+}
+
+footer.grid.padded-footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer.grid.padded-footer nav a {
+  margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  footer.grid.padded-footer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  footer.grid.padded-footer .col-3,
+  footer.grid.padded-footer .col-1,
+  footer.grid.padded-footer .col-3_sm-4_xs-12,
+  footer.grid.padded-footer .col-2_sm-4_xs-12 {
+    flex: 1;
+    min-width: 100px; /* Adjust as needed */
+    margin: 5px;
+  }
+
+  footer.grid.padded-footer nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer.grid.padded-footer nav a {
+    margin: 5px;
+  }
+}
