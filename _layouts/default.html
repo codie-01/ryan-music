@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <!----------------------- Hierbei wird das meta-Tag zur Weiterleitung nur auf der Startseite deiner Website hinzugefügt. Das if-Tag von Liquid stellt sicher, dass die Weiterleitung nur für die Homepage gilt. ---------------------------->
+
+    {% if page.url == "/" %}
+    <meta http-equiv="refresh" content="0; url=https://ryaninglis.podia.com/music">
+    {% endif %}
+
         <!----------------------- Google Fonts ---------------------------->
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
