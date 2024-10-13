@@ -106,37 +106,6 @@ a:hover {
     color: #37b5fe; 
 }
 
-.fa-brands {
-  color: white;
-  font-size: 2rem;
-  transition: all 0.3s;
-}
-
-.button1 {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.button2 {
-  padding: 6px 16px;
-  text-decoration: none;
-  background-color: white;
-  color: #231f20;
-  border-radius: 20px;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.button1:hover {
-  transform: scale(1.2);
-}
-
-.button2:hover {
-  transform: scale(1.05);
-  color: #231f20;
-}
-
 /* Grow Effect */
 a.grow {
   display: inline-block;
@@ -148,28 +117,13 @@ a.grow:hover {
   transform: scale(1.2);
 }
 
-
-/*--------------------- Buttons ---------------------------*/
+.fa-brands {
+  color: white;
+  font-size: 2rem;
+  transition: all 0.3s;
+}
 
 .button {
-  background-color: #37b5fe;
-  color: white;
-  border: 1px solid #37b5fe;
-  padding: 1rem 2rem;
-  margin: 1rem 0;
-  letter-spacing: 0.5rem 0;
-  display: block;
-  border-radius: 5px;
-}
-
-.button:hover {
-  color: #37b5fe;
-  background-color: white;
-  border: 1px solid #37b5fe;
-}
-
-/* Buttons inline */
-.button-inline {
   background-color: #37b5fe;
   color: white;
   border: 1px solid #37b5fe;
@@ -180,11 +134,37 @@ a.grow:hover {
   border-radius: 5px;
 }
 
-.button-inline:hover {
+.button:hover {
   color: #37b5fe;
   background-color: white;
   border: 1px solid #37b5fe;
 }
+
+.button1 {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button1:hover {
+  transform: scale(1.2);
+}
+
+.button2 {
+  padding: 6px 16px;
+  text-decoration: none;
+  background-color: white;
+  color: #231f20;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button2:hover {
+  transform: scale(1.05);
+  color: #231f20;
+}
+
 
 /*------------------------------------ Reusable Styles ---------------------------------------*/
 
@@ -227,69 +207,7 @@ img {
     background-color: white;
     color: black;
 }
-/* Base container styling */
-.container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 10px auto 0 auto; /* Centering the container */
-  padding: 0 10px;
-  background-color: #231f20; /* Consistent background color */
-  z-index: 1;
-  max-width: 1200px;
-  height: auto;
-  flex-direction: column; /* Stack items vertically by default */
-}
 
-/* Flex properties for container children */
-.container .image-container, .container .text-container {
-  flex: 1;
-  min-width: 300px;
-}
-
-/* Styling for image container */
-.image-container img {
-  width: 100%;
-  height: 50vh;
-  object-fit: cover; /* Ensures the image covers the area without losing its aspect ratio */
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  .image-container img, .text-container {
-    height: 50vh; 
-  }
-}
-
-/* Adjustments for screens wider than 768px */
-@media (min-width: 769px) {
-  .container {
-    flex-direction: row; /* Side by side for larger screens */
-    width: auto; /* Adjust width as necessary */
-  }
-
-  .image-container img {
-    height: 90vh;
-    width: 100%; 
-  }
-
-  .text-container {
-    width: 50%; 
-  }
-}
-
-/* Button container styling */
-.button-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 20px;
-}
 
 /* Specific background images for different sections */
 .rofm-mob-1 {
@@ -361,46 +279,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   max-width: 100%;
-}
-
-/*------------------------------------ Responsiveness ----------------------------------------*/
-
-.show-xs, 
-.show-sm,
-.show-md {
-  display: none;
-}
-
-/* MD Media Query (64em / 1024px) */
-@media (max-width: 64em) {
-  .show-md { display: block; }
-  .hide-md { display: none; }
-}
-
-/* SM Media Query (48em / 768px) */
-@media (max-width: 48em) {
-  .show-sm { display: block; }
-  .hide-sm { display: none; }
-  .sm-text-center { text-align: center; }
-  .sm-text-left { text-align: left; }
-  .sm-text-right { text-align: right; }
-  .sm-padded { padding: 5%; }
-  .sm-padded-1 { padding: 1rem; }
-  .sm-padded-05 { padding: 0.5rem; }
-  .sm-padded-t-0 { padding-top: 0; }
-  .sm-padded-b-0 { padding-bottom: 0; }
-  .sm-padded-l-0 { padding-left: 0; }
-  .sm-padded-r-0 { padding-right: 0; }
-  .sm-margin-t-0 { margin-top: 0; }
-  .sm-margin-b-0 { margin-bottom: 0; }
-  .sm-margin-l-0 { margin-left: 0; }
-  .sm-margin-r-0 { margin-right: 0; }
-}
-
-/* XS Media Query (36em / 576px) */
-@media (max-width: 36em) {
-  .show-xs { display: block; }
-  .hide-xs { display: none; }
 }
 
 /*--------------------- Hamburger-Menu CSS  ---------------------------*/
