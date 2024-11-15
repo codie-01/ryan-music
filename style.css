@@ -165,6 +165,22 @@ a.grow:hover {
   color: #231f20;
 }
 
+.contact-button {
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  color: #231f20;
+  padding: 1rem;
+  border-radius: 30px;
+
+}
+
+.link-container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
 
 /*------------------------------------ Reusable Styles ---------------------------------------*/
 
@@ -411,13 +427,14 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments 
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     height: auto;
   }
 }
+  */
 
 
 /*----------------------- Kontaktformular -----------------------*/
